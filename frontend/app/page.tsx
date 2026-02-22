@@ -43,7 +43,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/create", {
+      const response = await fetch("https://portfolio-builder-ia50.onrender.com/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

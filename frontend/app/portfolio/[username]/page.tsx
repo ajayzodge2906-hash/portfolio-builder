@@ -9,7 +9,7 @@ export default function PortfolioPage() {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/portfolio/${username}`, {
+    fetch(`https://portfolio-builder-ia50.onrender.com/portfolio/${username}`, {
       cache: "no-store",
     })
       .then((res) => res.json())
