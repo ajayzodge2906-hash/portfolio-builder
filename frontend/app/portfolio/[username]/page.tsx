@@ -58,14 +58,42 @@ export default function PortfolioPage() {
               />
             )}
 
-            <div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-                {data.name}
-              </h1>
-              <h2 className="text-lg sm:text-xl md:text-2xl text-purple-400 mt-2">
-                {data.role}
-              </h2>
-            </div>
+            <div className="space-y-4">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide">
+    {data.name}
+  </h1>
+
+  <h2 className="text-lg sm:text-xl md:text-2xl text-purple-400 mt-4">
+    {data.role}
+  </h2>
+
+  {/* SOCIAL LINKS UNDER ROLE */}
+  {(data.linkedin || data.github) && (
+    <div className="flex gap-4 justify-center sm:justify-start pt-2">
+      {data.linkedin && (
+        <a
+          href={data.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-500 text-sm transition"
+        >
+          🔗 LinkedIn
+        </a>
+      )}
+
+      {data.github && (
+        <a
+          href={data.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-white text-sm transition"
+        >
+          💻 GitHub
+        </a>
+      )}
+    </div>
+  )}
+</div>
           </div>
 
           {/* RIGHT SIDE - CONTACT */}
