@@ -336,7 +336,7 @@ export default function Home() {
         >
           Generate Portfolio
         </button>
-        <footer className="mt-24 pt-12 border-t border-gray-800 relative overflow-hidden">
+        <footer className="mt-10 pt-5 border-t border-gray-800 relative overflow-hidden">
 
   {/* Background Watermark */}
   <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
