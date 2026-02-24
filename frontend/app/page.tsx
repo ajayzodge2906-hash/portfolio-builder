@@ -336,6 +336,32 @@ export default function Home() {
         >
           Generate Portfolio
         </button>
+        <footer className="mt-24 pt-12 border-t border-gray-800 relative overflow-hidden">
+
+  {/* Background Watermark */}
+  <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
+    <span className="text-[160px] font-extrabold tracking-widest">
+      AJ
+    </span>
+  </div>
+
+  {/* Visible Footer Content */}
+  <div className="relative z-10 text-center text-gray-400 text-sm space-y-2">
+
+    <p className="text-xs tracking-widest uppercase text-gray-500">
+      Portfolio Engine
+    </p>
+
+    <p className="text-lg font-semibold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 bg-clip-text text-transparent">
+      Ajay Zodge
+    </p>
+
+    <p className="text-xs text-gray-500">
+      Built with Next.js • Flask • Designed for Modern Recruiters
+    </p>
+
+  </div>
+</footer>
 
       </div>
     </div>
